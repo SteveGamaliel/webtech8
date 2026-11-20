@@ -1,0 +1,58 @@
+<style>
+  .gallery-section {
+    width: min(1000px, 94%);
+    margin: 30px auto;
+    padding: 20px;
+    background: #f0f4f8;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+
+  .gallery-section h2 {
+    margin-bottom: 20px;
+    color: #102a43;
+    text-align: center;
+  }
+
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .image-gallery img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  /* Tablet screens */
+  @media (max-width: 800px) {
+    .image-gallery {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* Phone screens */
+  @media (max-width: 600px) {
+    .image-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+  }
+</style>
+
+<section class="gallery-section">
+  <h2>Finance Bridge Image Gallery</h2>
+
+  <div class="image-gallery">
+    <img src="gallery-1.png" alt="Analyzing market data on a financial screen">
+    <img src="gallery-2.png" alt="Reviewing financial charts and reports">
+    <img src="gallery-3.png" alt="City skyline with a stock market chart">
+    <img src="gallery-4.png" alt="Investment growth and financial markets">
+    <img src="gallery-5.png" alt="Digital banking and financial technology">
+    <img src="gallery-6.png" alt="Planning finances with charts and coins">
+  </div>
+</section>
